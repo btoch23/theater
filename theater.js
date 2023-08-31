@@ -1,11 +1,11 @@
-const GEN_ADMISSION_PRICE = 20;
+        const GEN_ADMISSION_PRICE = 20;
         const DISCOUNT_PRICE = 10;
         const MATINEE_DISCOUNT = 3;
 
         function buyTicket() {
             const age = prompt('Enter age!');
-            let cost = getBaseTicketCost(age);
-            function getBaseTicketCost(age) {
+            let cost = getTicketCost(age);
+            function getTicketCost(age) {
                 if (age <= 12 || age >= 65) {
                     return DISCOUNT_PRICE;
                 }
